@@ -1,0 +1,1067 @@
+/* 全局字体--微软雅黑 */
+body{
+	font-family: "Microsoft Yahei";
+}
+
+/* 顶部导航 start */
+/* 最新公告  */
+nav .flexlist_nav>ul>li .active{
+    color: #059FFF;
+}
+/* 当前线条 */
+nav li div[class="newsLine"]{
+    width: 72px;
+    height: 3px;
+    background:#059FFF;
+}
+/* 顶部导航 end */
+
+/* banner图 start */
+.bannerDiv{
+    height: 660px;
+    width: 100%;
+    position: relative;
+    background: url('../img/HomePage/banner.png') no-repeat center;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.bannerDiv>.bancenter{
+    width: 1220px;
+    height: 660px;
+    margin: 0 auto;
+    position: relative;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        top:1000px;
+    }
+    70%{
+        opacity: 0;
+        top: 250;
+    }
+    100%{
+        opacity: 1;
+        top: 0px;
+    }
+}
+.bannerDiv .moveDiv{
+    width: 440px;
+    height: 223px;
+    position: absolute;
+    left: 0;
+    top:  0;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+/* 背景图上两行文本 */
+.bannerDiv .bannerContent{
+    position: absolute;
+    top: 198px;
+    left: 0;
+}
+.bannerDiv .bannerContent h2{
+    font-weight: normal;
+    font-size: 46px;
+}
+.bannerDiv .bannerContent p{
+    font-size: 20px;
+    margin-top: 12px;
+}
+/* 背景图上按钮 */
+.bannerDiv .bannerBtn button{
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 385px;
+    left: 0;	
+    font-family: "Microsoft Yahei";
+    color: white;
+    font-size: 16px;
+    background-color: #021129;
+    border: 1px solid white;
+}
+/* 背景图上按钮hover */
+.bannerDiv .bannerBtn button:hover{
+    background-color: #059FFF;
+    border: 1px solid #059FFF;
+}
+/* banner图下方中间横线 */
+.bancenter .bannerLine{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.bannerDiv .bannerLast{
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.16);
+}
+.bannerDiv .bannerLastcen{
+    width: 1220px;
+    margin: 0 auto;
+}
+/* banner最下面更多 */
+.bannerDiv .bannerLastcen>p{
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.bannerDiv .bannerLastcen>p:hover{
+    color: #059FFF;
+}
+/* banner图 end */
+
+
+/* 入口导航 start  */
+.entranceDiv{
+    width: 1220px;
+    height: 180px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.entranceDiv li{
+    float: left;
+    width: 25%;
+    margin: 54px 0;
+    list-style: none;
+}
+.entranceDiv li>a{
+    display: block;
+    height: 70px;
+    text-decoration: none;
+    position: relative;
+}
+.entranceDiv a:hover>h3{
+    color: #059fff;
+}
+/* 剪切4张图片 */
+.entranceDiv li>a::before{
+    content: "";
+    position: absolute;
+    height: 70px;
+    left: 0;
+    top: 1px;
+    background: url('../img/HomePage/icons.png') no-repeat;
+}
+.entranceDiv .item1{
+    padding: 0 45px 0 102px;
+}
+.entranceDiv .item1::before{
+    width: 74px;
+    background-position: -227px 0;
+}
+.entranceDiv .item2{
+    padding: 0 45px 0 113px;
+}
+.entranceDiv .item2::before{
+    width: 92px;
+    background-position: -114px 0;
+}
+.entranceDiv .item3{
+    padding: 0 35px 0 130px;
+}
+.entranceDiv .item3::before{
+    width: 106px;
+    background-position: 0 0;
+}
+.entranceDiv .item4{
+    padding: 0 35px 0 110px;
+}
+.entranceDiv .item4::before{
+    width: 78px;
+    background-position: -324px 0;
+}
+/* 入口图标后h3文字 */
+.entranceDiv h3{
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom:  3px;
+}
+.entranceDiv p{
+    font-size: 12px;
+    color: #666666;
+    line-height: 20px;
+}
+/* 入口导航 end */
+
+
+/* 产品介绍 start */
+.productBg{
+    background-color: #FAFAFA;
+}
+.productDiv{
+    padding: 88px 0;
+    width: 1220px;
+    height: 763px;
+    margin: 0 auto;
+}
+/* 标题div */
+.productDiv .proTitle{
+    margin-bottom: 80px;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.productDiv>.proTitle span{
+    color: #059FFF;
+}
+.productDiv>.proTitle p{
+    font-size: 14px;
+    margin-top: 9px;
+    color: #666;
+}
+/* 内容div */
+.productDiv .proCompute{
+    width: 459px;
+    height: 631px;
+    float: left;
+    background: url('../img/HomePage//product/productCompute_bg.png') no-repeat;
+    margin-right: 20px;
+}
+/* 公用标题字体 */
+.productDiv>.proContent span{
+    color: white;
+    font-size: 16px;
+}
+/* 公用i位置设置方法 */
+.productDiv i{
+    display: inline-block;
+    width: 28px;
+    height: 25px;
+    position: relative;
+    top: 8px;
+}
+/* 定义4个div可复用的字体 */
+ .itemTitle{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+ .itemCon{
+    color: white;
+    font-size: 12px;
+}
+/* 定义公用hot图标 */
+.proComputeContent .hot::after{
+    content: "";
+    display: inline-block;
+    margin-left: 9px;
+    width: 30px;
+    height: 15px;
+    vertical-align: middle;
+    background: url('../img/HomePage/product/hot.png');
+}
+/* 定义公用内测private图标 */
+.proComputeContent .test::after{
+    content: "";
+    display: inline-block;
+    margin-left: 9px;
+    width: 37px;
+    height: 15px;
+    vertical-align: middle;
+    background: url('../img/HomePage/product/private.png');
+}
+/* 计算资源div上部标题 */
+.proComputeTitle{
+    height: 62px;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 65px;
+    border-bottom: 1px solid rgba(255,255,255,.16);
+    position: relative;
+    margin-bottom: 33px;
+}
+/* 计算资源服务i背景图引入 */
+.proComputeTitle i{
+    background: url('../img/HomePage/product/titleicon.png') no-repeat;
+}
+/* 计算资源服务内容里的5行数据 */
+.proComputeContent {
+    width: 303px;
+    margin: 0 auto;
+}
+.proComputeContent>div {
+    width: 281px;
+    height: 47px;
+    margin-bottom: 16px;
+    padding: 18px 0 14px 20px;
+}
+/* 前两个个div hover后变色 */
+.proComputeContent .hov:hover {
+    background-color: #6864E7;
+}
+/* 后三个div鼠标放上为禁止 ,背景透明*/
+.proComputeContent div[class*="opt"]{
+    height: 58px;
+    /* margin-bottom: 0px; */
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+/* 定义计算资源服务下面五项前面的图标 */
+.proComputeContent>.item1 .item1icon{
+    height: 82px;
+    width: 38px;
+    margin-top: 3px;
+    background: url('../img/HomePage/product/jisuan1.png')  no-repeat;
+    float: left;
+}
+.proComputeContent>.item2 .item2icon{
+    height: 82px;
+    width: 38px;
+    background: url('../img/HomePage/product/jisuan2.png') no-repeat;
+    float: left;
+}
+.proComputeContent>.item3 .item3icon{
+    height: 82px;
+    width: 38px;
+    background: url('../img/HomePage/product/jisuan3.png') no-repeat;
+    float: left;
+}
+.proComputeContent>.item4 .item4icon{
+    height: 82px;
+    width: 38px;
+    background: url('../img/HomePage/product/jisuan4.png') no-repeat;
+    float: left;
+}
+.proComputeContent>.item5 .item5icon{
+    height: 82px;
+    width: 38px;
+    background: url('../img/HomePage/product/jisuan5.png') no-repeat;
+    float: left;
+}
+/* 右边上面的div 网络接入服务 */
+.proRight{
+    float: left;
+}
+.proNetwork{
+    width: 700px;
+    height: 303px;
+    background: url('../img/HomePage//product/do_web_bg.png') no-repeat;
+    margin-bottom: 20px;
+}
+/* 网络接入服务div上部标题 */
+.proNetworkTitle{
+    height: 64px;
+    line-height: 64px;
+    padding-left: 33px;
+    font-size: 16px;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255,.16);
+}
+/* 网络接入服务i背景图引入 */
+.proNetwork i{
+    background: url('../img/HomePage/product/do_web_icon.png') no-repeat;
+}
+/* 网络接入服务div下部内容 */
+.proNetworkContent {
+    width: 700px;
+    margin: 0 auto;
+    padding: 27px 0px 20px 46px;
+}
+.proNetworkContent>div {
+    width: 240px;
+    height: 46px;
+    float: left;
+    padding: 18px 0 18px 20px;
+}
+/* div hover后变色 */
+.proNetworkContent .item:hover {
+    background-color: #47556C;
+}
+/* 定义网络接入服务下面每项前面的图标 */
+.proNetworkContent .itemicon{
+    height: 82px;
+    width: 40px;
+    margin-top: 3px;
+    background: url('../img/HomePage/product/net.png') no-repeat;
+    float: left;
+}
+
+/* 右下左边div 数据中心*/
+.proData{
+    width: 340px;
+    height: 308px;
+    float: left;
+    background: url('../img/HomePage//product/idc_bg.png');
+    margin-right: 20px;
+}
+.proDataTitle{
+    height: 64px;
+    line-height: 64px;
+    padding-left: 33px;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(255,255,255,.16);
+}
+/* 数据中心服务i背景图引入 */
+.proData i{
+    background: url('../img/HomePage/product/idc_icon.png') no-repeat;
+}
+.proDataContent {
+    width: 303px;
+    margin: 0 auto;
+}
+.proDataContent>div {
+    width: 231px;
+    margin-left: 28px;
+    height: 35px;
+    margin-bottom: 17px;
+    padding: 15px 0 18px 20px;
+    /* background-color: royalblue; */
+}
+/* div hover后变色 */
+.proDataContent .item:hover {
+    background-color: #6864E7;
+}
+
+/* 定义数据中心下面两项前面的图标 */
+.proDataContent .itemicon{
+    height: 82px;
+    width: 40px;
+    margin-top: 3px;
+    background: url('../img/HomePage/product/data.png') no-repeat;
+    float: left;
+}
+/* 咨询管理服务div */
+.proConsult{
+    width: 340px;
+    height: 308px;
+    float: left;
+    background: url('../img/HomePage/product/se_service_bg.png');
+}
+.proConsultTitle{
+    height: 64px;
+    line-height: 64px;
+    padding-left: 33px;
+    font-size: 16px;
+    position: relative;
+    margin-bottom: 22px;
+    border-bottom: 1px solid rgba(255,255,255,.16);
+}
+/* 咨询管理服务i背景图引入 */
+.proConsult i{
+    background: url('../img/HomePage/product/se_service_icon.png') no-repeat;
+}
+.proConsultContent {
+    width: 303px;
+    margin: 0 auto;
+}
+.proConsultContent>div {
+    width: 231px;
+    height: 45px;
+    margin-left: 28px;
+    margin-bottom: 7px;
+    padding: 15px 0 18px 20px;
+    /* background-color: royalblue; */
+}
+/* div hover后变色 */
+.proConsultContent .item:hover {
+    background-color: #27ADDC;
+}
+/* 定义咨询管理服务下面两项前面的图标 */
+.proConsultContent .itemicon{
+    height: 82px;
+    width: 40px;
+    background: url('../img/HomePage/product/zixun.png') no-repeat;
+    float: left;
+}
+
+/* 产品介绍 end */
+
+/* 权威认证 start */
+.safeDiv{
+    width: 1230px;
+    height: 432px;
+    margin: 0 auto;
+    margin-top: 115px;
+}
+/* 权威认证div标题文字 */
+.safeTitle{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 55px ;
+    text-align: center;
+}
+.safeTitle>span{
+    color: #059FFF;
+}
+.safeTitle>p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 11px;
+}
+/* 权威认证div内容 */
+.safeContent{
+    margin-top: 55px;
+}
+/* 权威认证装每张图片的div */
+.safeContent div{
+    width: 200px;
+    padding-top: 30px;
+    margin: 25px 0 20px 4px;
+    height: 160px;
+    float: left;
+}
+.safeContent div:hover{
+    box-shadow: 0px 10px 20px rgba(2,48,76,0.05);
+}
+/* 代码复用,权威认证图片位置 */
+.safeContent>div>i{
+    display: block;
+    width: 127px;
+    height: 72px;
+    margin: 0 auto 15px;
+}
+/* 权威认证六张图片 */
+.safeContent>.item1 i{
+    background: url('../img/HomePage/safe/hor-img11.png') center no-repeat;
+}
+.safeContent>.item2 i{
+    background: url('../img/HomePage/safe/hor-img2.png') center no-repeat;
+}
+.safeContent>.item3 i{
+    background: url('../img/HomePage/safe/hor-img12.png') center no-repeat;
+}
+.safeContent>.item4 i{
+    background: url('../img/HomePage/safe/hor-img5.png') center no-repeat;
+}
+.safeContent>.item5 i{
+    background: url('../img/HomePage/safe/hor-img3.png') center no-repeat;
+}
+.safeContent>.item6 i{
+    background: url('../img/HomePage/safe/hor-img4.png') center no-repeat;
+}
+/* 权威认证图片下h5文字 */
+.safeContent h5{
+    font-size: 14px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+}
+/* 权威认证 end */
+
+
+/* 为什么选择云联数据 start */
+.meritDiv{
+    width: 100%;
+    height: 627px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 75px;
+}
+.meritDiv div[class^="bgDiv"]{
+    width: 1220px;
+    margin: 0 auto;
+    height: 600px;
+}
+.meritDiv h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 52px;
+    color: #fff;
+    font-weight: normal;
+}
+.meritDiv .bgpic{
+    float: left;
+    width: 664px;
+    height: 436px;
+}
+
+.meritDiv .bgDiv1>.bgpic{
+    background: url('../img/HomePage/merit/av-img1.png') no-repeat;
+}
+.meritDiv .bgDiv2>.bgpic{
+    margin-left: 85px;
+    margin-top: -25px;
+    background: url('../img/HomePage/merit/av-img2.png') no-repeat;
+}
+.meritDiv .bgDiv3>.bgpic{
+    margin-left: 30px;
+    width: 517px;
+    background: url('../img/HomePage/merit/av-img4.png') no-repeat;
+}
+.meritDiv .bgDiv4>.bgpic{
+    margin-left: 80px;
+    width: 421px;
+    background: url('../img/HomePage/merit/av-img5.png') no-repeat;
+}
+
+.meritDiv .bginfo{
+    width:425px;
+    height:220px;
+    float: right;
+    color: white;
+    margin-top: 95px;
+}
+.meritDiv .bgDiv2>.bginfo{
+    margin-right: 30px;
+}
+.meritDiv .bgDiv3>.bginfo{
+    float: left;
+    margin-left: 65px;
+}
+.meritDiv .bgDiv4>.bginfo{
+    float: right;
+    width: 605px;
+}
+.meritDiv .bginfo h1{
+    font-size: 48px;
+    margin-bottom: 22px;
+    font-weight: normal;
+    line-height: 35px;
+}
+.meritDiv .bginfo p{
+    font-size: 18px;
+    line-height: 35px;
+}
+.meritDiv .bginfo a{
+    display: block;
+    color: #fff;
+    background: rgba(255,255,255,0);
+    transition-duration: .3s;
+    width: 158px;
+    height: 38px;
+    border: 1px solid #fff;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 55px;
+    font-size: 14px;
+    text-decoration: none;
+}
+.meritDiv .bginfo a:hover{
+    background:rgba(255,255,255,1); 
+    color:#059fff;
+}
+
+.meritDiv .lineDiv{
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    z-index: 1;
+    text-align: center;
+}
+.meritDiv .lineDiv li{
+    display: inline-block;
+    margin: 0 3px;
+    width: 30px;
+    height: 4px;
+    line-height: 4px;
+    color: transparent;
+    text-align: center;
+    background: rgba(255,255,255,.4);
+    cursor: pointer;
+}
+.meritDiv .lineDiv .on{
+    background: #fff;
+    color: transparent;
+}
+/* .meritDiv .lineDiv li:hover{
+    background: #fff;
+} */
+/* 为什么选择云联数据 end */
+
+
+/* 业务遍布图 start */
+.mapDiv{
+    height: 878px;
+    background-color: #F5F6F7;
+}
+/* 业务遍布图标题 */
+.mapDiv .mapTitle{
+    padding:80px 0 30px 0;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.mapTitle span{
+    color: #059FFF;
+}
+.mapTitle p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+/* 业务遍布图内容 */
+.mapContent{
+    width: 1220px;
+    height: 601px;
+    margin: 0 auto;
+    background: url('../img/HomePage/world-map-bg.png') no-repeat center;
+    position: relative;
+}
+/* 业务遍布图内容所有点动画 */
+@keyframes change {
+    0%{
+        transform: scale(0);
+        opacity: 1; 
+    }
+    30% {
+        transform: scale(0);
+        opacity: 0.1;
+    }
+    60% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+/* 所有点的定位 */
+.mapContent>.position1{
+    position: absolute;
+    left: 150px;
+    top: 126px;
+}
+.mapContent .position2{
+    position: absolute;
+    left: 289px;
+    top: 230px;
+}
+.mapContent .position3{
+    position: absolute;
+    left: 368px;
+    top: 443px;
+}
+.mapContent .position4{
+    position: absolute;
+    left: 655px;
+    top: 206px;
+}
+.mapContent .position5{
+    position: absolute;
+    left: 939px;
+    top: 230px;
+}
+.mapContent .position6{
+    position: absolute;
+    left: 994px;
+    top: 222px;
+}
+.mapContent .position7{
+    position: absolute;
+    left: 981px;
+    top: 272px;
+}
+.mapContent .position8{
+    position: absolute;
+    left: 965px;
+    top: 311px;
+}
+.mapContent .position9{
+    position: absolute;
+    left: 942px;
+    top: 302px;
+}
+.mapContent .position6_introduce{
+    position: absolute;
+    left: 1016px;
+    top: 202px;
+}
+.mapContent .position7_introduce{
+    position: absolute;
+    left: 1004px;
+    top: 272px;
+}
+.mapContent .position8_introduce{
+    position: absolute;
+    left: 982px;
+    top: 321px;
+}
+.mapContent .position9_introduce{
+    position: absolute;
+    left: 904px;
+    top: 316px;
+}
+/* 绿色点的动画 */
+.mapContent .div1{
+    position: absolute;
+    left: -36px;
+    top: -36px;
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    background: #14cc45;
+    opacity: 0.12;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+/* 绿色圆点 */
+.mapContent .div2{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #14cc45;
+    opacity: 1;
+}
+/* 蓝色点的动画 */
+.mapContent .bluediv1{
+    position: absolute;
+    left: -36px;
+    top: -36px;
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    background: #059fff;
+    opacity: 0.12;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+/* 蓝色圆点 */
+.mapContent .bluediv2{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background:#059fff;
+    opacity: 1;
+}
+/* 圆点旁边字体 */
+.intr{
+    font-size: 16px;
+    color: #808080;
+}
+/* 业务遍布图 end */
+
+
+/* 综合解决方案 start */
+.programmeDiv{
+    height: 732px;
+}
+/* 标题 */
+.programmeDiv .programmeTitle{
+    padding:80px 0 30px 0;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.programmeDiv span{
+    color: #059FFF;
+}
+.programmeDiv p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+.programmeDiv .programmeContent{
+    width: 100%;
+    height: 500px;
+    background-color: #292E33;
+}
+.programmeDiv .contentBox{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+/* 两个侧边 */
+.programmeDiv .btn{
+    position: absolute;
+	top: 0;
+	width: 40px;
+	height: 500px;
+	display: none;
+	opacity: 0;
+    transition: all .5s;
+    background-color: rgba(255,255,255,0.08);
+    z-index: 99;
+}
+.programmeDiv .btn i{
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -10px;
+	margin-top: -18px;
+	display: block;
+	width: 20px;
+	height: 36px;
+	z-index: 100;
+}
+.programmeDiv .leftBtn{
+    left: 0;
+}
+.programmeDiv .rightBtn{
+    right: 0;
+}
+
+.programmeDiv .leftBtn i{
+    background: url('../img/HomePage/programme/index-sprite.png') no-repeat 0 -1538px;
+}
+.programmeDiv .rightBtn i{
+    background: url('../img/HomePage/programme/index-sprite.png') no-repeat 0 -1500px;
+}
+/* hover后显示 */
+.programmeDiv>.programmeContent>.contentBox:hover>.btn{
+    display: block;
+    opacity: 1;
+}
+.programmeDiv .programmeContent>.contentBox li{
+    float: left;
+    width: 300px;
+    height: 500px;
+    position: relative;
+}
+.programmeDiv ul{
+    width: 1800px;
+    position: absolute;
+    height: 500px;
+    top: 0;
+    left: -300px;
+}
+.programmeDiv .programmeContent .programmebg1{
+    background: url('../img/HomePage/programme/cloud-photo.jpg');
+}
+.programmeDiv .programmeContent .programmebg2{
+    background: url('../img/HomePage/programme/game-photo.jpg');
+}
+.programmeDiv .programmeContent .programmebg3{
+    background: url('../img/HomePage/programme/finance-photo.jpg');
+}
+.programmeDiv .programmeContent .programmebg4{
+    background: url('../img/HomePage/programme/mobile-photo.jpg');
+}
+.programmeDiv .programmeContent .programmebg5{
+    background: url('../img/HomePage/programme/busin-photo.jpg');
+}
+.programmeDiv .programmeContent li i{
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    transition: top .5s;
+}
+.programmeDiv .programmeContent .icon1{
+    background: url('../img/HomePage/programme/solution-items-icon.png') no-repeat;
+}
+.programmeDiv .programmeContent .icon2{
+    background: url('../img/HomePage/programme/solution-items-icon.png') no-repeat 0 -240px;
+}
+.programmeDiv .programmeContent .icon3{
+    background: url('../img/HomePage/programme/solution-items-icon.png') no-repeat 0 -60px;
+}
+.programmeDiv .programmeContent .icon4{
+    background: url('../img/HomePage/programme/solution-items-icon.png') no-repeat 0 -120px;
+}
+.programmeDiv .programmeContent .icon5{
+    background: url('../img/HomePage/programme/solution-items-icon.png') no-repeat 0 -180px;
+}
+.programmeDiv .programmeContent li .probgcolor{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #292e33;
+    opacity: 0.5;
+}
+.programmeDiv .programmeContent li .dark{
+    opacity: 0.8;
+}
+.programmeDiv .programmeContent li .protit{
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    transition: top .5s;
+}
+.programmeDiv .programmeContent li .prointro{
+    text-indent: 26px;
+    font-size: 12px;
+    height: 150px;
+    padding: 0 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 282px;
+    color: #fff;
+    line-height: 2;
+    opacity: 0;
+    transition:  all .6s;
+}
+.programmeDiv .programmeContent li a{
+    position: absolute;
+    top: 452px;
+    left: 50%;
+    margin-left: -59px;
+    width: 118px;
+    height: 34px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0;
+    transition: all .6s;
+    text-decoration: none;
+}
+
+.programmeDiv .programmeContent li:hover .probgcolor{
+    background-color: #059fff;
+}
+.programmeDiv .programmeContent li:hover i{
+    top: 76px;
+}
+.programmeDiv .programmeContent li:hover .protit{
+    top: 168px;
+}
+.programmeDiv .programmeContent li:hover .prointro{
+    top: 230px;
+	opacity: 1;
+}
+.programmeDiv .programmeContent li:hover a{
+    top: 380px;
+	opacity: 1;
+}
+/* 综合解决方案 end */
+
+
+/* 新闻动态 start */
+.newsDiv{
+    height: 282px;
+}
+/* 标题 */
+.newsDiv .newsTitle{
+    padding:73px 0 30px 0;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 55px;
+    text-align: center;
+}
+.newsDiv span{
+    color: #059FFF;
+}
+.newsDiv p{
+    font-size: 14px;
+    margin-top: 8px;
+    color: #666;
+}
+/* 新闻动态 end */
+
+

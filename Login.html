@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员登录</title>
+    <!-- cssReset -->
+    <link rel="stylesheet" href="css/cssReset.css">
+    <!-- 引入导航条 -->
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- 引入登录css -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!-- 顶部导航 start -->
+    <nav>
+        <div class="navbody">
+            <div class="flexlist">
+                <div class="flexlist_logo">
+                    <a href="index.html">
+                        <img src="img/HomePage/homeLogo.png" alt="">
+                    </a>
+                </div>
+                <div class="flexlist_nav">
+                    <ul>
+                        <li><a href="" class="active">最新公告</a>
+                            <div class="newsLine"></div>
+                        </li>
+                        <li><a href="">产品中心</a>
+                            <div class="productLine"></div>
+                            <div class="productDrop">
+                                <div class="procenter">
+                                    <ul>
+                                        <li class="line">
+                                            <h1>计算资源服务</h1>
+                                            <a class="hot" href="">ECS弹性计算</a>
+                                            <a class="new" href="">弹性裸金属服务器</a>
+                                        </li>
+                                        <li class="line">
+                                            <h1>网络接入服务</h1>
+                                            <a href="">专线接入服务</a>
+                                            <a class="hot" href="">高速通道服务</a>
+                                            <a href="">带宽接入服务</a>
+                                        </li>
+                                        <li class="line">
+                                            <h1>数据中心服务</h1>
+                                            <a href="idc.html">机房场地服务</a>
+                                            <a href="">运维咨询服务</a>
+                                        </li>
+                                        <li>
+                                            <h1>咨询管理服务</h1>
+                                            <a href="">机房搬迁咨询</a>
+                                            <a href="">BCM管理咨询</a>
+                                            <a href="">IT生产规划咨询</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="pos"><a href="">解决方案</a>
+                            <div class="programmeLine"></div>
+                            <div class="programmeDrop">
+                                <a href="">混合云解决方案</a>
+                                <a href="">IT咨询解决方案</a>
+                                <a href="Solution.html">IT运维解决方案</a>
+                                <a href="">机房场地解决方案</a>
+                                <a href="">机房搬迁解决方案</a>
+                            </div>
+                        </li>
+                        <li class="pos"><a href="">服务保障</a>
+                            <div class="serviceLine"></div>
+                            <div class="serviceDrop">
+                                <a href="Service.html">免费备案</a>
+                                <a class="rig" href="">故障赔偿</a>
+                                <a href="">服务支持</a>
+                                <a class="rig" href="">VIP服务</a>
+                            </div>
+                        </li>
+                        <li><a href="Help.html">帮助中心</a>
+                            <div class="helpLine"></div>
+                        </li>
+                        <li class="pos"><a href="">关于我们</a>
+                            <div class="aboutLine"></div>
+                            <div class="aboutDrop">
+                                <a href="">关于我们</a>
+                                <a href="">新闻公告</a>
+                                <a class="last" href="">联系我们</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbody_login">
+                <div class="language">
+                    中国站<span></span>
+                    <div class="dropdown">
+                        <p style="color: #999999;"> 中国站</p>
+                        <p>简体中文</p>
+                    </div>
+                </div>
+                <div class="btn1">备案</div>
+                <a href="Login.html">
+                    <div class="btn2">登录</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- 顶部导航 end -->
+
+    <!-- 登录内容区域 start -->
+    <div class="loginDiv">
+        <div class="loginContent">
+            <div class="loginText">
+                <h1>数十万用户的信赖之选</h1>
+                <p>节点遍布国内主要区域</p>
+                <p>全动态BGP网络</p>
+                <p>至强硬件打造强悍性能体验</p>
+                <p>技术服务7×24全天响应</p>
+            </div>
+            <div class="loginForm">
+                <p>用户登录</p>
+                <div class="loginTip" id="loginTip">请输入验证码</div>
+                <form action="">
+                    <div class="loginName inp" id="phone">
+                        <input type="text" name="userName" id="phoneInp" placeholder="手机号 / 已认证邮箱">
+                    </div>
+                    <div class="loginPwd inp" id="pwd">
+                        <input type="password" name="password" id="pwdInp" placeholder="登录密码">
+                    </div>
+                    <div class="identCode clearfloat" id="identCode">
+                        <div class="inputCode" id="code">
+                            <input type="text" id="inputCode" placeholder="验证码" maxlength="4" value="" autocomplete="off">
+                        </div>
+                        <div class="codeImg">
+                            <img id="img" src="img/login/code/1.png" alt="">
+                            <span id="refresh"></span>
+                        </div>
+                    </div>
+                    <div class="loginOpt">
+                        <input type="checkbox" id="checkbox" name="remb"><label for="checkbox">记住登录名</label>
+                        <a href="">忘记密码?</a>
+                    </div>
+                    <input type="button" value="登 录" class="logsubmit" id="btn">
+                    <div class="loginReg">
+                        还没有账号？立即<a href="">免费注册</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 登录内容区域 end -->
+
+    <!-- 改变input框选中 -->
+    <script src="js/login.js"></script>
+
+    <!-- 登录底部 start -->
+    <div class="footerDiv">
+        <p>COPYRIGHT 2017-2020 云联世纪（北京）数据服务有限公司 ALL RIGHTS RESERVED　云联世纪（北京）数据服务有限公司　</p>
+    </div>
+    <!-- 登录底部 end -->
+</body>
+
+</html>

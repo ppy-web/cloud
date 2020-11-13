@@ -1,0 +1,519 @@
+/* 全局字体--微软雅黑 */
+body {
+    font-family: "Microsoft Yahei";
+}
+
+/* 顶部导航 start */
+/* 最新公告  */
+nav .flexlist_nav>ul>li .active {
+    color: #059FFF;
+}
+
+/* 当前线条 */
+nav li div[class="productLine"] {
+    width: 72px;
+    height: 3px;
+    background: #059FFF;
+}
+
+nav {
+    background-color: #192933;
+}
+
+/* 顶部导航 end */
+
+
+/* banner图 start */
+.infoBanner {
+    position: relative;
+    height: 502px;
+    width: 100%;
+    background: url('../img//idc/banner.png') no-repeat center;
+}
+
+.infoBanner .bannerAuto {
+    width: 1220px;
+    height: 412px;
+    margin: 0 auto;
+    padding-top: 129px;
+}
+
+/* banner图中文字 */
+.infoBanner h1 {
+    font-size: 36px;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 26px;
+}
+
+.infoBanner p {
+    width: 720px;
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+/* banner图 end */
+
+
+/* 数据中心介绍 start */
+.dataIntroduce {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 74px;
+}
+
+/* title */
+.dataIntroduce>p {
+    color: #333;
+    font-size: 26px;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 15px;
+}
+
+/* tab导航 */
+.dataIntroduce>ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+    border-bottom: solid 1px #eee;
+}
+
+.dataIntroduce ul::before,
+ul::after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.dataIntroduce>ul>li {
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: -1px;
+}
+
+/* 选中的li */
+.dataIntroduce .active {
+    color: #059fff;
+    border-bottom: 2px solid #059fff;
+    height: 48px;
+    line-height: 48px;
+}
+
+/* tab切换内容 */
+.dataIntroduce .dataTab {
+    border: solid 1px #cfd6e3;
+    padding: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dataIntroduce .dataTab {
+    border: solid 1px #cfd6e3;
+    padding: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.dataIntroduce .dataTab>div {
+    display: none;
+}
+
+.dataIntroduce .dataTab div.show {
+    display: block;
+}
+
+/* 第一个内容块 */
+/* 内容上边左右两部分 */
+.dataIntroduce .tableft {
+    float: left;
+    width: 66%;
+}
+
+.dataIntroduce .tableft>p {
+    line-height: 1.8em;
+    text-align: justify;
+    margin-bottom: 29px;
+}
+
+.dataIntroduce .tableft>span {
+    color: #0080ff;
+}
+
+.dataIntroduce .tabright {
+    float: right;
+    width: 33%;
+    height: 240px;
+}
+
+/* 内容下部分 */
+.dataIntroduce .tabbottom>p {
+    margin: 2px 0 35px;
+    font-size: 18px;
+    line-height: 46px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 每一行 */
+.dataIntroduce .tabbottom li {
+    margin-bottom: 35px;
+}
+
+/* 小图左边文字 */
+.dataIntroduce .iconright {
+    float: left;
+    width: 90%;
+}
+
+.dataIntroduce .iconright>h2 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 36px;
+    color: black;
+}
+
+.dataIntroduce .iconright>p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    color: #666;
+}
+
+/* 每一列的小图 */
+.dataIntroduce .boticon {
+    float: left;
+    display: inline-block;
+    width: 45px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.dataIntroduce .tabbottom ul>:nth-child(1) span {
+    background: url('../img/idc/product-adv-1.png') no-repeat center;
+}
+
+.dataIntroduce .tabbottom ul>:nth-child(2) span {
+    background: url('../img/idc/product-adv-2.png') no-repeat center;
+}
+
+.dataIntroduce .tabbottom ul>:nth-child(3) span {
+    background: url('../img/idc/product-adv-3.png') no-repeat center;
+}
+
+.dataIntroduce .tabbottom ul>:nth-child(4) span {
+    background: url('../img/idc/product-adv-4.png') no-repeat center;
+}
+
+.dataIntroduce .tabbottom ul>:nth-child(5) span {
+    background: url('../img/idc/product-adv-5.png') no-repeat center;
+}
+
+/* 每个块的大图不一样，代码复用，单独设置 */
+.dataIntroduce .taricon1 {
+    background: url('../img/idc/dc_sz.jpg') no-repeat center;
+}
+
+.dataIntroduce .taricon2 {
+    background: url('../img/idc/dc_nm.jpg') no-repeat center;
+}
+
+.dataIntroduce .taricon3 {
+    background: url('../img/idc/dc_hongkong.jpg') no-repeat center;
+}
+
+.dataIntroduce .taricon4 {
+    background: url('../img/idc/dc_dl.jpg') no-repeat center;
+}
+
+.dataIntroduce .taricon5 {
+    background: url('../img/idc/dc_nj.jpg') no-repeat center;
+}
+
+/* 数据中心介绍 end */
+
+
+/* 核心优势 start */
+.coreAdv {
+    background-color: #F7F8FA;
+    padding: 78px 0;
+    padding-bottom: 80px;
+}
+
+.coreAuto {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.coreAuto>p {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 15px;
+    color: #333;
+}
+
+.coreAdv li {
+    float: left;
+    width: 282px;
+    height: 260px;
+    margin-left: 30px;
+    background-color: #fff;
+    padding: 36px 20px;
+    box-sizing: border-box;
+    /* border: 1px solid #eee; */
+}
+
+.coreAdv li:first-child {
+    margin-left: 0;
+}
+
+/* 每个li中的图片 */
+.coreAdv li span {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 38px;
+}
+
+.coreAdv ul>:nth-child(1) span {
+    background: url('../img/idc/product-spe-1.png') no-repeat center;
+}
+
+.coreAdv ul>:nth-child(2) span {
+    background: url('../img/idc/product-spe-2.png') no-repeat center;
+}
+
+.coreAdv ul>:nth-child(3) span {
+    background: url('../img/idc/product-spe-3.png') no-repeat center;
+}
+
+.coreAdv ul>:nth-child(4) span {
+    background: url('../img/idc/product-spe-4.png') no-repeat center;
+}
+
+.coreAdv li>p {
+    margin: 33px 0 8px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+.coreAdv li>div {
+    font-size: 12px;
+    color: #999;
+    line-height: 22px;
+    width: 100%;
+}
+
+/* 核心优势 end */
+
+
+/* 数据中心地图 start */
+.mapNode {
+    padding-bottom: 40px;
+    background: #f5f6f7;
+}
+
+.mapTitle {
+    padding-top: 80px;
+    margin-bottom: 85px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+}
+
+.mapTitle span {
+    color: #059fff;
+}
+
+.mapTitle p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+/* 地图部分 */
+.mapContent {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mapbg {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    /* border: 1px solid black; */
+    background: url('../img/idc/world-map-bg-idc01.png') no-repeat center;
+}
+
+/* 业务遍布图内容所有点动画 */
+@keyframes change {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    30% {
+        transform: scale(0);
+        opacity: 0.1;
+    }
+
+    60% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+/* 绿色圆点 */
+.mapbg .div1 {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #14cc45;
+    opacity: 1;
+}
+
+/* 绿色点的动画 */
+.mapbg .div2 {
+    position: absolute;
+    left: -36px;
+    top: -36px;
+    height: 88px;
+    width: 88px;
+    border-radius: 50%;
+    background: #14cc45;
+    opacity: 0.12;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+/* 所有点的定位 */
+.mapbg .position1 {
+    position: absolute;
+    left: 672px;
+    top: 223px;
+}
+
+.mapbg .position2 {
+    position: absolute;
+    left: 752px;
+    top: 176px;
+}
+
+.mapbg .position3 {
+    position: absolute;
+    left: 657px;
+    top: 503px;
+}
+
+.mapbg .position4 {
+    position: absolute;
+    left: 757px;
+    top: 357px;
+}
+
+.mapbg .position5 {
+    position: absolute;
+    left: 579px;
+    top: 323px;
+}
+
+.mapbg .position6 {
+    position: absolute;
+    left: 644px;
+    top: 313px;
+}
+
+.mapbg .position7 {
+    position: absolute;
+    left: 662px;
+    top: 382px;
+}
+
+.mapbg .position8 {
+    position: absolute;
+    left: 514px;
+    top: 384px;
+}
+
+.mapbg .position9 {
+    position: absolute;
+    left: 610px;
+    top: 212px;
+}
+
+/* 数据中心地图 end */
+
+
+/* 常见问题 start */
+.problem {
+    padding: 62px 0 60px;
+}
+
+.problemAuto {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.problemAuto>p {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 53px;
+    height: 32px;
+    line-height: 32px;
+    padding-right: 15px;
+}
+
+.problem li {
+    float: left;
+    width: 364px;
+    height: 240px;
+    background: #fff;
+    margin: 0 20px;
+}
+
+.problem li>p {
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    margin-top: 22px;
+}
+
+.problem li span {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    color: #333;
+}
+
+.problem li a {
+    position: absolute;
+    right: 22px;
+    top: 0;
+    font-size: 12px;
+    color: #0080ff;
+    text-decoration: none;
+}
+
+/* 常见问题 end */

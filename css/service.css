@@ -1,0 +1,610 @@
+/* 全局字体--微软雅黑 */
+body{
+    font-family: "Microsoft Yahei";
+    /* font-size: 14px; */
+}
+
+/* 顶部导航 start */
+/* 最新公告  */
+nav .flexlist_nav>ul>li .active{
+    color: #059FFF;
+}
+/* 当前线条 */
+nav li div[class="serviceLine"]{
+    width: 72px;
+    height: 3px;
+    background:#059FFF;
+}
+/* 顶部导航 end */
+
+
+/* banner图 start */
+.bannerDiv{
+    height: 490px;
+    position: relative;
+    background: url('../img/service/banner.jpg') center top no-repeat;
+}
+.bannerDiv .banText{
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 157px;
+    color: white;
+    overflow: hidden;
+}
+.bannerDiv h1{
+    font-size: 36px;
+    margin-bottom: 26px;
+    font-weight: normal;
+    padding: 0;
+}
+.bannerDiv p{
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+}
+/* banner图 end */
+
+/* 选项 sticky start */
+.optionDiv{
+    position: sticky;
+    top: 0px;
+    border-bottom: 1px solid #dddddd;
+    overflow: hidden;
+    background-color: white;
+}
+.optionDiv ul{
+    width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+    height: 99px;
+    overflow: hidden;
+}
+.optionDiv li{
+    float: left;
+    width: 20%;
+    line-height: 96px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.optionDiv ul>.active{
+    border-bottom: 3px solid #059fff;
+    color: #059FFF;
+}
+/* 选项 sticky end */
+
+
+/* 免费备案 start */
+.freeDiv{
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 92px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+.freeDiv>h1{
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    overflow: hidden;
+}
+.freeDiv .firstp{
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 74px;
+}
+.freeDiv>ul{
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.freeDiv>ul>li{
+    width: 320px;
+    float: left;
+    text-align: center;
+}
+/* 横线上面4张小图片 */
+.freeDiv>ul>li::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: url('../img/service/icons.png') no-repeat;
+}
+.freeDiv .item2::before{
+    background-position: -65px 0;
+}
+.freeDiv .item3::before{
+    background-position: -130px 0;
+}
+.freeDiv .item4::before{
+    background-position: -195px 0;
+}
+/* 中间虚线 */
+.freeDiv>ul>li>p{
+    margin: 13px 0;
+    margin-bottom: 12px;
+    height: 16px;
+    background: url('../img/service/ico.png') center no-repeat;
+}
+/* 原点之前和原点之后虚线 */
+.freeDiv>ul>li>p::before{
+    width: 152px;
+    content: "";
+    float: left;
+    height: 1px;
+    margin-top: 7px;
+    background: url('../img/service/line.png') left center no-repeat;
+}
+.freeDiv>ul>li>p::after{
+    width: 152px;
+    content: "";
+    float: right;
+    height: 1px;
+    margin-top: 7px;
+    background: url('../img/service/line.png') left center no-repeat;
+}
+/* 去除第一个原点前的虚线 */
+.freeDiv .item1 p::before{
+    width: 0;
+}
+/* 去除最后一个原点后的虚线 */
+.freeDiv .item4 p::after{
+    width: 0;
+}
+/* 虚线下文字 */
+.freeDiv ul h1{
+    font-weight: normal;
+    font-size: 14px;
+}
+/* 我要备案按钮 */
+.freeDiv .btn{
+    text-align: center;
+    padding-top: 49px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    clear: both;
+}
+.freeDiv .btn>a{
+    display: inline-block;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 25px;
+    color: white;
+    background: #059fff;
+    text-decoration: none;
+}
+.freeDiv .problemsDiv{
+    overflow: hidden;
+}
+.freeDiv .problemsDiv>h1{
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 0 0 20px;
+    overflow: hidden;
+    font-weight: normal;
+}
+.freeDiv .problemsDiv>h1::before{
+    content: '';
+    width: 18px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url('../img/service/icons.png') no-repeat;
+    background-position: -275px 1px;
+}
+.freeDiv .problemsDiv>ul{
+    margin: 0 0 15px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 14px;
+}
+.freeDiv .problemsDiv>.active .firstLi{
+    display: none;
+}
+.freeDiv .problemsDiv>.active .lastLi{
+    display: block;
+}
+.freeDiv .problemsDiv .firstLi{
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    background: #f7f9fa;
+    color: #666;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+}
+.freeDiv .problemsDiv .firstLi::before{
+    content: "";
+    width: 14px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    background: url('../img/service/icons.png') -297px 15px no-repeat;
+}
+.freeDiv .problemsDiv .lastLi{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+.freeDiv .problemsDiv .lastLi>h3{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 16px;
+    overflow: hidden;
+}
+.freeDiv .problemsDiv .lastLi>h3::before{
+    content: "";
+    width: 14px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    background: url('../img/service/icons.png') -337px 0px no-repeat;
+}
+.freeDiv .problemsDiv .lastLi>p{
+    line-height: 24px;
+    color: #666;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+/* .freeDiv .problemsDiv li{
+    width: 93%;
+    height: 48px;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #dddddd;
+    margin-bottom:15px;
+    margin-left: 40px;
+    padding-left: 20px;
+    background: #f7f9fa;
+    color: #666666;
+    line-height: 48px;
+    box-sizing: border-box;
+} */
+/* .freeDiv .problemsDiv li::before{
+    content: '';
+    width: 14px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    background: url('../img/service/icons.png') no-repeat;
+    background-position: -297px 15px;
+} */
+/* 免费备案 end */
+
+
+/* 故障赔偿 start */
+.faultDiv{
+    background-color: #FAFAFA;
+    overflow: hidden;
+}
+.faultDiv .center{
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+.faultDiv h1{
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    overflow: hidden;
+}
+.faultDiv p{
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-top: 23px;
+    margin-bottom: 75px;
+}
+.faultDiv ul{
+    margin: 0 10px 45px ;
+    overflow: hidden;
+}
+.faultDiv li{
+    width: 240px;
+    float: left;
+    text-align: center;
+}
+/* 横线上面4张小图片 */
+.faultDiv .firstul li::before{
+    content: "";
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background: url('../img/service/icons.png') no-repeat;
+}
+.faultDiv .firstul .item1::before{
+    background-position: 0 -66px;
+}
+.faultDiv .firstul .item2::before{
+    background-position: -65px -66px;
+}
+.faultDiv .firstul .item3::before{
+    background-position: -130px -66px;
+}
+.faultDiv .firstul .item4::before{
+    background-position: -195px -66px;
+}
+.faultDiv .firstul .item5::before{
+    background-position: 0 -132px;
+}
+/* 中间虚线 */
+.faultDiv>.center>ul p{
+    margin: 13px 0;
+    height: 16px;
+    background: url('../img/service/ico.png') center no-repeat;
+}
+/* 原点之前和原点之后虚线 */
+.faultDiv>.center>ul li>p::before{
+    width: 112px;
+    content: "";
+    float: left;
+    height: 1px;
+    margin-top: 7px;
+    background: url('../img/service/line.png') left center no-repeat;
+}
+.faultDiv>.center>ul li>p::after{
+    width: 112px;
+    content: "";
+    float: right;
+    height: 1px;
+    margin-top: 7px;
+    background: url('../img/service/line.png') left center no-repeat;
+}
+/* 去除第一个原点前的虚线 */
+.faultDiv>.center>ul .item1>p::before{
+    width: 0;
+}
+/* 去除最后一个原点后的虚线 */
+.faultDiv>.center>ul .item5 p::after{
+    width: 0;
+}
+/* 虚线下文字 */
+.faultDiv ul h1{
+    font-weight: normal;
+    font-size: 14px;
+}
+/* 赔偿类型 */
+.faultDiv .faultType{
+    clear: both;
+    overflow: hidden;
+}
+.faultDiv .faultType>h1{
+    height: 25px;
+    line-height: 25px;
+    font-size: 18px;
+    margin: 0 0 20px;
+    overflow: hidden;
+    text-align: left;
+}
+.faultDiv .faultType>h1::before{
+    content: '';
+    width: 16px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background: url('../img/service/icons.png') -316px 1px no-repeat;
+}
+.faultDiv .secul{
+    margin: 0 0 0 -25px;
+    overflow: hidden;
+}
+.faultDiv .secul li{
+    float: left;
+    margin-left: 25px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    text-align: center;
+    width: 338px;
+    height: 248px;
+    padding: 30px 25px 0;
+    overflow: hidden;
+}
+.faultDiv .secul li::before{
+    content: "";
+    display: inline-block;
+    width: 110px;
+    height: 92px;
+    margin: 0 0 38px;
+    background: url('../img/service/icons.png') no-repeat;
+}
+.faultDiv .secul .type1::before{
+    background-position: 0 -199px;
+}
+.faultDiv .secul .type2::before{
+    background-position: -112px -200px;
+}
+.faultDiv .secul .type3::before{
+    background-position: -220px -199px;
+}
+.faultDiv .secul li h4{
+    font-size: 18px;
+    margin: 0 0 15px;
+    font-weight: normal;
+}
+.faultDiv .secul li p{
+    line-height: 24px;
+    color: #666666;
+    height: 48px;
+    overflow: hidden;
+}
+/* 故障赔偿 end */
+
+
+/* 服务支持 start */
+.supportDiv{
+    padding: 95px 0 85px;
+    background-color: #FAFAFA;
+    overflow: hidden;
+}
+.supportDiv .center{
+    width: 1220px;
+    margin: 0 auto;
+}
+.supportDiv h1{
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.supportDiv p{
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin: 22px 0 70px;
+}
+.supportDiv span{
+    color: #059fff;
+    margin: 0 5px;
+}
+.supportDiv ul{
+    margin: 0 0 0 -25px;
+    overflow: hidden;
+}
+.supportDiv li{
+    float: left;
+    margin-left: 25px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    text-align: center;
+    width: 338px;
+    height: 248px;
+    padding: 30px 25px 0;
+    overflow: hidden;
+}
+/* 横线上面4张小图片 */
+.supportDiv  li::before{
+    content: "";
+    display: inline-block;
+    width: 110px;
+    height: 92px;
+    margin: 0 0 38px;
+    background: url('../img/service/icons.png') no-repeat;
+}
+.supportDiv .item1::before{
+    background-position: 16px -295px;
+}
+.supportDiv .item2::before{
+    background-position: -92px -295px;
+}
+.supportDiv .item3::before{
+    background-position: -218px -295px;
+}
+.supportDiv li h4{
+    font-size: 18px;
+    margin: 0 0 15px;
+    font-weight: normal;
+}
+.supportDiv li p{
+    line-height: 24px;
+    color: #666666;
+    height: 48px;
+    overflow: hidden;
+}
+/* 服务支持 end */
+
+
+/* VIP服务 start */
+.vipDiv{
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 95px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+.vipDiv>h1{
+    font-weight: normal;
+    font-size: 36px;
+    text-align: center;
+    overflow: hidden;
+}
+.vipDiv>p{
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-top: 25px;
+    margin-bottom: 75px;
+}
+.vipDiv .discuss{
+    border: 1px solid #ddd;
+    height: 88px;
+    padding: 45px 60px;
+    overflow: hidden;
+}
+.vipDiv .disIcon{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 60px;
+    background: url('../img/service/icons.png') 0 -392px no-repeat;
+}
+.vipDiv .disContent h4{
+    font-size: 18px;
+    margin: 0 0 15px;
+    font-weight: normal;
+}
+.vipDiv .disContent p{
+    line-height: 24px;
+    color: #666666;
+    font-size: 14px;
+}
+.vipDiv ul{
+    margin: 20px 0 0 -25px;
+    overflow: hidden;
+}
+.vipDiv ul li{
+    float: left;
+    margin-left: 25px;
+    border: 1px solid #dddddd;
+    background: #fff;
+    text-align: center;
+    width: 388px;
+    overflow: hidden;
+}
+.vipDiv ul li:hover{
+    color: #059fff;
+}
+.vipDiv ul a{
+    display: block;
+    height: 188px;
+    padding: 30px 0 0;
+    font-size: 18px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.vipDiv ul span{
+    color: #059fff;
+}
+.vipDiv ul a::before{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 35px;
+    background:url('../img/service/icons.png') no-repeat;
+}
+.vipDiv .item1 a::before{
+    background-position: -269px -36px;
+}
+.vipDiv .item2 a::before{
+    background-position: -115px -399px;
+}
+.vipDiv .item3 a::before{
+    background-position: -232px -405px;
+}
+/* VIP服务 end */

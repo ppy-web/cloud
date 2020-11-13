@@ -1,0 +1,321 @@
+/* 全局字体--微软雅黑 */
+body{
+    font-family: "Microsoft Yahei";
+}
+
+/* 顶部导航 start */
+/* 最新公告  */
+nav .flexlist_nav>ul>li .active{
+    color: #059FFF;
+}
+/* 当前线条 */
+nav li div[class="programmeLine"]{
+    width: 72px;
+    height: 3px;
+    background:#059FFF;
+}
+nav{
+    background-color: #192933;
+}
+/* 顶部导航 end */
+
+/* banner图 start */
+.bannerDiv{
+    margin-top: 80px;
+    width: 100%;
+    height: 468px;
+    background: url('../img/solution/mobile_banner.jpg') no-repeat center;
+}
+.bannerDiv>.bannerContent{
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 166px;
+}
+.bannerDiv>.bannerContent h2{
+    font-size: 44px;
+    color: white;
+    font-weight: normal;
+}
+.bannerDiv>.bannerContent p{
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;   
+}
+/* banner图 end */
+
+
+/* 运维面临的问题 start */
+.problemDiv{
+    width: 1220px;
+    margin: 0 auto;
+}
+/* 运维面临的问题标题 */
+.problemDiv>p{
+    padding-top: 77px;
+    padding-bottom: 59px;
+    font-size: 36px;
+    color: #555;
+    text-align: center;
+}
+/* 运维面临的问题4个块 */
+.problemDiv>ul{
+    padding-bottom: 440px;
+}
+.problemDiv>ul>li{
+    width: 23%;
+    height: 342px;
+    padding-top: 32px;
+    margin: 0px 1%;
+    float: left;
+}
+/* 每个块的图标 */
+.problemDiv>ul>li>span{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+/* 每个块图标截图 */
+.problemDiv span{
+    background: url('../img/solution/m-issue-sprite.png') no-repeat;
+}
+/* 第一个图标位置0 0不用截图 剩下三个截图 */
+.problemDiv span[class="icon2"]{
+    background-position: 0 -100px;
+}
+.problemDiv li:nth-child(3) span{
+    background-position: 0 -200px;
+}
+.problemDiv .icon4{
+    background-position: 0 -300px;
+}
+/* 每个块的标题 */
+.problemDiv>ul>li>p{
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 19px 0 13px ;
+}
+/* 每个块的内容文字 */
+.problemDiv>ul>li>div{
+    margin: 0px 20px;
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+}
+/* hover后加阴影 */
+.problemDiv>ul>li:hover{
+    background-color: #fff; 
+	box-shadow: 0 2px 16px rgba(0, 0, 0, .12);
+}
+/* hover后icon变颜色（换图片） */
+.problemDiv>ul>li:hover .icon1{
+    background-position: -100px 0;
+}
+.problemDiv>ul>li:hover .icon2{
+    background-position: -100px -100px;
+}
+.problemDiv>ul>li:hover .icon3{
+    background-position: -100px -200px;
+}
+.problemDiv>ul>li:hover .icon4{
+    background-position: -100px -300px;
+}
+/* hover后标题p改变颜色 */
+.problemDiv>ul>li:hover p {
+	color: #059fff;
+}
+
+/* 运维面临的问题 end */
+
+
+/* 解决方案 start */
+.programmeDiv{
+    width: 100%;
+    background-color: #f5f6f7;
+}
+.programmeDiv>p{
+    padding-top: 75px;
+    padding-bottom: 56px;
+    font-size: 36px;
+    color: #555;
+    text-align: center;
+}
+.programmeDiv .programmeContent{
+    width: 1220px;
+    margin: 0 auto;
+    height: 492px;
+    background: url('../img/solution/mobile-deploy.png') no-repeat top left;
+}
+.programmeDiv .proExplain{
+    width: 30%;
+    padding: 25px;
+    float: right;
+    line-height: 32px;
+    font-size: 14px;
+    color: #666;
+    text-indent: 2em;
+    /* 设置border-box 解决加入padding撑开div */
+    box-sizing: border-box; 
+    background-color: #fff;
+}
+.programmeDiv .proExplain>h1{
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #333;
+    text-indent: 0;
+    text-align: center;
+    font-weight: normal;
+}
+/* 解决方案 end */
+
+
+/* 我们的优势 start */
+.advantageDiv{
+    width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.advantageDiv *{
+    box-sizing: border-box;
+}
+.advantageDiv>p{
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-size: 36px;
+    color: #555;
+    text-align: center;
+}
+
+.advantageDiv .advContent li{
+    list-style-type: none;
+    float: left;
+    width: 23.5%;
+    height: 400px;
+    margin-left: 2%;
+    margin-bottom: 60px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+.advantageDiv .advContent li:first-child{
+    margin-left: 0;
+}
+.advantageDiv  .advicon{
+    height: 160px;
+    padding-top: 25px;
+    background-color: #e9f0f7;
+}
+.advantageDiv  .advicon>span{
+    display: block;
+    width: 180px;
+    height: 111px;
+    margin: 0 auto;
+}
+.advantageDiv  ul>:first-child span{
+    background: url('../img/solution/eyoushi_img5.png') no-repeat 0 0;
+}
+.advantageDiv  ul>:nth-child(2) span{
+    background: url('../img/solution/eyoushi_img6.png') no-repeat ;
+}
+.advantageDiv  ul>:nth-child(3) span{
+    background: url('../img/solution/fyoushi_img3.png') no-repeat ;
+}
+.advantageDiv  ul>:nth-child(4) span{
+    background: url('../img/solution/fyoushi_img4.png') no-repeat ;
+}
+.advantageDiv .advcon {
+    padding: 30px 20px;
+    line-height: 2;
+    font-size: 12px;
+    color: #999;
+}
+.advantageDiv .advcon>h1 {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: normal;
+}
+.advantageDiv li:hover h1{
+    color: #059FFF;
+}
+/* 我们的优势 end */
+
+
+/* 更多行业解决方案 start */
+.moreDiv{
+    background-color: #f5f6f7;
+    overflow: hidden;
+}
+/* 设置所有元素加padding不挤大父div */
+.moreDiv * {
+    box-sizing: border-box;
+}
+.moreDiv>.moreCenter{
+    width: 1220px;
+    margin: 0 auto;
+}
+/* 标题字体 */
+.moreDiv>.moreCenter>p{
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    padding: 84px 0px 60px;
+}
+.moreDiv>.moreCenter li{
+    float: left;
+    width: 25%;
+    height: 180px;
+    margin-bottom: 80px;
+}
+/* 四张图片 */
+.moreDiv>.moreCenter li>i{
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 30px auto 19px;
+    background: url('../img/solution/fangan-sprite.png') no-repeat;
+}
+/* 四张图片截图 */
+.moreDiv>.moreCenter ul>:nth-child(1) i{
+    background-position: 0 -180px;
+}
+.moreDiv>.moreCenter ul>:nth-child(2) i{
+    background-position: 0 -120px;
+}
+.moreDiv>.moreCenter ul>:nth-child(3) i{
+    background-position: 0 -240px;
+}
+.moreDiv>.moreCenter ul>:nth-child(4) i{
+    background-position: 0 -60px;
+}
+/* 图下面文字 */
+.moreDiv>.moreCenter li>p{
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+/* 每个块hover效果 */
+.moreDiv>.moreCenter li:hover{
+    background-color: #fff;  
+	box-shadow: 0 2px 16px rgba(0, 0, 0, .12);
+}
+/* 四张图hover后切图 */
+.moreDiv>.moreCenter li:hover .i1{
+    background-position: -60px -180px;
+}
+.moreDiv>.moreCenter li:hover .i2{
+    background-position: -60px -120px;
+}
+.moreDiv>.moreCenter li:hover .i3{
+    background-position: -60px -240px;
+}
+.moreDiv>.moreCenter li:hover .i4{
+    background-position: -60px -60px;
+}
+/* p hover后变色 */
+.moreDiv>.moreCenter li:hover p{
+    color: #0EA3FF;
+}
+/* 更多行业解决方案 end */

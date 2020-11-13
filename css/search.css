@@ -1,0 +1,149 @@
+/* 全局字体--微软雅黑 */
+body{
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+}
+
+/* 顶部导航 start */
+/* 最新公告  */
+nav .flexlist_nav>ul>li .active{
+    color: #059FFF;
+}
+/* 当前线条 */
+nav li div[class="helpLine"]{
+    width: 72px;
+    height: 3px;
+    background:#059FFF;
+}
+/* 顶部导航 end */
+
+/* banner图 start */
+.bannerDiv{
+    /* width: 1220px; */
+    height: 185px;
+    padding-top: 175px;
+    position: relative;
+    background: url(../img/help/banner.jpg) center top #00083b no-repeat;
+}
+.bannerDiv .banCenter{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bannerDiv .banCenter>p{
+    float: left;
+    font-size: 36px;
+    color: #fff;
+    line-height: 50px;
+}
+.bannerDiv .banSearch{
+    width: 800px;
+    float: right;
+    overflow: hidden;
+}
+.bannerDiv .banSearch input[type=text] {
+    float: left;
+    height: 46px;
+    width: 636px;
+    border: 2px solid #059fff;
+    background: #fff;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    font: 400 13.3333px Arial;
+    font-family: "Microsoft Yahei";
+    outline: none;
+}
+.bannerDiv .banSearch input[type=submit] {
+    float: right;
+    border: none;
+    height: 50px;
+    width: 120px;
+    background: url(../img/help/search.png) center no-repeat;
+    background-color: #059fff ;
+    cursor: pointer;
+    outline: none;
+}
+.bannerDiv ul{
+    clear: both;
+    line-height: 25px;
+    overflow: hidden;
+}
+.bannerDiv ul::before{
+    content: "搜索热词：";
+    float: left;
+    height: 25px;
+    color: #999;
+}
+.bannerDiv ul li{
+    float: left;
+    height: 25px;
+    margin-right: 20px;
+}
+.bannerDiv ul li>a{
+    cursor: pointer;
+    color: #059fff;
+    text-decoration: none;
+}
+/* banner图 end */
+
+/* 搜索内容 start */
+.searchDiv{
+    width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+}
+/* 左边产品文档 */
+.searchDiv .proDoc{
+    width: 18.1%;
+    margin: 40px 0;
+    float: left;
+    background-color: #f5f6f7;
+}
+.searchDiv .proDoc>p{
+    /* 转ie盒模型 */
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #333;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 35px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.searchDiv .proDoc>p:hover{
+    color: #0088ff;
+}
+/* 右边搜索内容 */
+.searchDiv .question{
+    width: 78%;
+    float: left;
+    min-height: 600px;
+    margin-top: 40px;
+    margin-left: 2%;
+}
+.quesTitle{
+    margin: 0 20px;
+	height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+}
+.quesTitle>p>a:first-child{
+    display: inline-block;
+	width: 20px;
+	float: left;
+	height: 16px;
+	background: url('../img/help/help_home.png') no-repeat center;
+	margin-top: 17px;
+}
+.quesTitle>p>a:last-child{
+    float: left;
+	margin-left: 14px;
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+}
+/* 搜索内容 end */
+

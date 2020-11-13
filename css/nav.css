@@ -1,0 +1,339 @@
+/* 所有内容中部清除浮动 */
+.clearfloat::before,
+.clearfloat::after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfloat::after {
+    clear: both;
+}
+
+/* 顶部导航 start */
+nav{
+    height: 78px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    border-top: 1px solid #354154;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* 整个头部hover变色 */
+nav:hover{
+    background-color: #192933;
+    border-bottom: 1px solid #134D71;
+}
+nav .navbody{
+    width: 1220px;
+    margin: 0 auto;
+}
+/* logo和二级菜单 */
+nav .flexlist{
+    width: 814px;
+    height: 80px;
+    float: left;
+}
+/* logo动画 */
+@keyframes load{
+    0%{
+        transform: scale(.3,.3);
+    }
+}
+nav .flexlist_logo{
+    height: 44px;
+    margin: 15px 0;
+    float: left;
+    margin-right: 20px;
+    animation: load 1.2s both;
+}
+/* logo图片 */
+.flexlist_logo img{
+    width: 122px;
+    height: 44px;
+}
+/* 菜单 */
+nav li{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* 一级菜单文字 */
+nav .flexlist_nav>ul>li>a{
+    font-size: 18px;
+    line-height: 77px;
+    color: white;
+}
+/* 一级菜单hover文字变色 */
+nav .flexlist_nav>ul>li:hover>a{
+    color: #059FFF;
+    text-decoration: none;
+}
+/* 线条动画  线条初始值*/
+nav li div[class*="Line"]{
+    width: 0;
+    height: 3px;
+    background:#059FFF;
+    transition: all 0.2s linear;
+}
+/* 线条动画  线条hover动画 */
+nav li:hover div[class*="Line"]{
+    width: 72px;
+    height: 3px;
+    background:#059FFF;
+    transform: translate(0,0);
+}
+/* 产品介绍下拉框 */
+nav .pos{
+    position: relative;
+}
+nav .productDrop{
+    display: none;
+    height: 200px;
+    background-color: #192933;
+    padding-top: 40px;
+    position: absolute;
+    top: 79px;
+    left: 0;
+    right: 0;
+}
+nav .procenter{
+    width: 1220px;
+    margin: 0 auto;
+}
+nav .productDrop li{
+    width: 290px;
+    float: left;
+    position: relative;
+    padding-left: 65px;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+/* 中间的横线 */
+nav .productDrop .line:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 210px;
+    background: white;
+    opacity: 0.1;
+}
+nav .productDrop h1{
+    font-size: 16px;
+    color: white;
+    padding: 0 20px;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+nav .productDrop a{
+    display: block;
+    font-size: 14px;
+    color: white;
+    padding: 8px 20px;
+    width: 170px;
+    text-decoration: none;
+}
+/* 热门图标 */
+nav .productDrop .hot::after{
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width: 30px;
+    height: 15px;
+    vertical-align: middle;
+    background: url('../img/HomePage/product/hot.png') no-repeat;
+}
+/* new图标 */
+nav .productDrop .new::after{
+    content: "";
+    display: inline-block;
+    margin-left: 5px;
+    width: 30px;
+    height: 15px;
+    vertical-align: middle;
+    background: url('../img/HomePage/new.png') no-repeat;
+}
+nav li:hover>.productDrop{
+    display: block;
+}
+nav .productDrop a:hover{
+    background-color: #2E3E46;
+    color: #059fff;
+}
+/* 解决方案下拉框 */
+nav .programmeDrop{
+    display: none;
+    width: 364px;
+    padding: 28px 0 0 43px;
+    background-color: #192933;
+    position: absolute;
+    top: 79px;
+    left: -129px;
+    right: 0;
+}
+nav .programmeDrop a{
+    display: block;
+    float: left;
+    width: 144px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+nav ul>:nth-child(3):hover .programmeDrop{
+    display: block;
+}
+nav .programmeDrop>a:hover{
+    background-color: #2E3E46;
+    color: #059fff;
+}
+/* 服务保障下拉框 */
+nav .serviceDrop{
+    display: none;
+    width: 454px;
+    padding: 28px 0 20px 43px;
+    background-color: #192933;
+    position: absolute;
+    top: 79px;
+    left: -188px;
+    right: 0;
+}
+nav .serviceDrop a{
+    display: block;
+    float: left;
+    width: 191px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 24px;
+    padding-left: 20px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+nav ul>:nth-child(4):hover .serviceDrop{
+    display: block;
+}
+nav .serviceDrop>a:hover{
+    background-color: #2E3E46;
+    color: #059fff;
+}
+/* 关于我们下拉框 */
+nav .aboutDrop{
+    display: none;
+    width: 120px;
+    background: #192933;
+    position: absolute;
+    left: 0;
+    top: 79px;
+    right: 0;
+}
+/* 关于下拉框文字 */
+nav .aboutDrop>a{
+    display: block;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 10px;
+    width: 120px;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    text-decoration: none;
+}
+/* 关于我们下拉框最后一行文字 */
+nav .aboutDrop .last{
+    margin-bottom: 0;
+}
+nav ul>:nth-child(6):hover .aboutDrop{
+    display: block;
+}
+nav .aboutDrop a:hover{
+    background-color: #2E3E46;
+    color: #059fff;
+}
+/* 登录 */
+nav .navbody_login{
+    width: 250px;
+    height: 40px;
+    margin-top: 19px;
+    float: right;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+/* 中国站区域 */
+.language{
+    width: 109px;
+    padding-left: 11px;
+    float: left;  
+    line-height: 40px;
+    position: relative;
+}
+/* 三角形图标 */
+.language>span{
+    width: 0;
+    height: 0;
+    border-top: 8px solid white;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    position: absolute;
+    right: 40px;
+    top: 16px;
+}
+/* 中国站下拉框 */
+.dropdown{
+    display: none;
+    width: 85px;
+    height: 90px;
+    background-color: #192933;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    line-height: 40px;
+    padding-top: 30px;
+}
+.dropdown>p{
+    padding-left: 15px;
+}
+/* hover后显示下拉框 */
+.language:hover>.dropdown{
+    color:#00A8FC;
+    display: block;
+}
+.language:hover{
+    color:#00A8FC;
+}
+/* 小三角hover变色 */
+.language:hover span{
+    border-top: 8px solid#00A8FC;
+}
+/* 登录按钮 */
+nav .navbody_login .btn1,.btn2{
+    height: 38px;
+    border: 1px solid white;
+    padding: 0 15px;
+    line-height: 38px;
+    float: left;
+}
+nav .navbody_login>.btn1{
+    margin-right: 10px;
+    background: #3B8EDE;
+    border: 1px solid #3B8EDE;
+}
+/* 登录超链接改原始样式 */
+nav .navbody_login a{
+    display: inline;
+    text-decoration: none;
+    color: white;
+}
+/* 顶部导航 end */

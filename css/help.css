@@ -1,0 +1,157 @@
+/* 全局字体--微软雅黑 */
+body{
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+}
+
+/* 顶部导航 start */
+/* 最新公告  */
+nav .flexlist_nav>ul>li .active{
+    color: #059FFF;
+}
+/* 当前线条 */
+nav li div[class="helpLine"]{
+    width: 72px;
+    height: 3px;
+    background:#059FFF;
+}
+/* 顶部导航 end */
+
+/* banner图 start */
+.bannerDiv{
+    /* width: 1220px; */
+    height: 185px;
+    padding-top: 175px;
+    position: relative;
+    background: url(../img/help/banner.jpg) center top #00083b no-repeat;
+}
+.bannerDiv .banCenter{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bannerDiv .banCenter>p{
+    float: left;
+    font-size: 36px;
+    color: #fff;
+    line-height: 50px;
+}
+.bannerDiv .banSearch{
+    width: 800px;
+    float: right;
+    overflow: hidden;
+}
+.bannerDiv .banSearch input[type=text] {
+    float: left;
+    height: 46px;
+    width: 636px;
+    border: 2px solid #059fff;
+    background: #fff;
+    padding: 0 20px;
+    margin-bottom: 12px;
+    font: 400 13.3333px Arial;
+    font-family: "Microsoft Yahei";
+    outline: none;
+}
+.bannerDiv .banSearch input[type=submit] {
+    float: right;
+    border: none;
+    height: 50px;
+    width: 120px;
+    background: url(../img/help/search.png) center no-repeat;
+    background-color: #059fff ;
+    cursor: pointer;
+    outline: none;
+}
+.bannerDiv ul{
+    clear: both;
+    line-height: 25px;
+    overflow: hidden;
+}
+.bannerDiv ul::before{
+    content: "搜索热词：";
+    float: left;
+    height: 25px;
+    color: #999;
+}
+.bannerDiv ul li{
+    float: left;
+    height: 25px;
+    margin-right: 20px;
+}
+.bannerDiv ul li>a{
+    cursor: pointer;
+    color: #059fff;
+    text-decoration: none;
+}
+/* banner图 end */
+
+/* 信息列表 start */
+.introduceDiv{
+    width: 1220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.introduceDiv ul{
+    margin: 0 0 85px -70px;
+    overflow: hidden;
+
+}
+.introduceDiv li{
+    float: left;
+    width: 252px;
+    height: 252px;
+    margin: 110px 0 0 70px;
+}
+.introduceDiv li h1::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin: -5px 20px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.introduceDiv h1 {
+    font-size: 18px;
+    height: 42px;
+    line-height: 42px;
+    font-weight: normal;
+    background-size: 30px 30px;
+}
+.introduceDiv ul>:first-child h1 {
+    background: url('../img/help/help_icon_7.png') no-repeat 6px 6px;
+}
+.introduceDiv ul>:nth-child(2) h1 {
+    background: url('../img/help/help_icon_4.png') no-repeat 6px 6px;
+}
+.introduceDiv ul>:nth-child(3) h1 {
+    background: url('../img/help/help_icon_1.png') no-repeat 6px 6px;
+}
+.introduceDiv ul>:nth-child(4) h1 {
+    background: url('../img/help/help_icon_5.png') no-repeat 6px 6px;
+}
+.introduceDiv p{
+    display: block;
+    margin-left: 50px;
+    height: 39px;
+    line-height: 39px;
+    color: #666666;
+    border-top: 1px solid #ddd;
+}
+.introduceDiv p:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.introduceDiv a{
+    color: black;
+    text-decoration: none;
+}
+
+.introduceDiv li p:hover{
+    background:#fafafa; 
+    /* color:#059fff; */
+}
+.introduceDiv li a:hover{
+    color:#059fff;
+}
+/* 信息列表 end */
+

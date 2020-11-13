@@ -1,0 +1,400 @@
+/* 联系我们 start */
+.contactDiv{
+    height:160px;
+    background: url('../img/HomePage/reg-bg.png') center no-repeat;
+}
+.contactDiv>.contactContent{
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 28px;
+}
+.contactDiv>.contactContent>.contentTitle{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+.contactDiv>.contactContent>.contacBtn{
+    display: block;
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    margin: 27px auto 0;
+    background-color: #ffffff;
+    border-radius: 3px;
+    border: solid 1px #ffffff;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #188ae0;
+    text-align: center;
+    text-decoration: none;
+}
+/* 联系我们 end */
+
+
+/* 综合模块 start */
+.collectDiv{
+    padding-top: 51px;
+    background: #292e33;
+    height: 296px;
+}
+/* 综合模块居中div设置 */
+.collectDiv>.collectContent{
+    width: 1220px;
+    margin: 0 auto;
+}
+/* 每一列列表设置 */
+.collectDiv>.collectContent>ul{
+    float: left;
+    width: 1200px;
+    margin:0 0 80px;
+}
+.collectDiv>.collectContent>ul>li{
+    float: left;
+    width: 160px;
+    margin-right: 50px;
+    color: white;
+}
+.collectDiv>.collectContent>ul>li>h1{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 18px;
+}
+.collectDiv>.collectContent>ul>li>a{
+    display: block;
+    font-size: 14px;
+    color: #525c66;
+    line-height: 30px;
+    text-decoration: none;
+}
+/* 每一列a设置鼠标悬浮改变颜色 */
+.collectDiv>.collectContent a:hover{
+    color: white;
+}
+.collectDiv>.collectContent>ul>li>div{
+    font-size: 14px;
+    width: 240px;
+    color: #525c66;
+    line-height: 36px;
+}
+.collectDiv>.collectContent>ul>li>div>span{
+    font-size: 14px;
+    color: #fff;
+}
+.collectDiv>.collectContent>ul>li>.conPic li {
+    margin-top: 25px;
+    height: 38px;
+    width: 38px;
+    margin-right: 20px;
+    position: relative;
+    float: left;
+    background: url('../img/HomePage/collecticons.png') no-repeat;
+}
+/* 微信、qq、Email三张小图标 */
+.collectDiv>.collectContent>ul>li>.conPic .weixin{
+    background-position: 0 -46px;
+}
+.collectDiv>.collectContent>ul>li>.conPic .qq{
+    background-position: -40px -46px;
+}
+.collectDiv>.collectContent>ul>li>.conPic .email{
+    background-position: -120px -46px;
+}
+/* 微信、qq、Email鼠标放上后效果 */
+.collectDiv>.collectContent>ul>li>.conPic .weixin:hover{
+    background-position: 0 -86px;
+}
+.collectDiv>.collectContent>ul>li>.conPic .qq:hover{
+    background-position: -40px -86px;
+}
+.collectDiv>.collectContent>ul>li>.conPic .email:hover{
+    background-position: -120px -86px;
+}
+/* 微信鼠标放上后上拉框二维码 */
+.collectDiv>.collectContent>ul>li>.conPic .conDrop{
+    display: none;
+    width: 120px;
+    height: 120px;
+    background: url('../img/HomePage/5e5df2ab2f875.jpg') no-repeat ;
+    background-size: 100% 100%;
+    /* padding: 20px;
+    box-sizing: border-box; */
+    border: 10px solid white;
+    position: absolute;
+    left: -57px;
+    bottom: 49px;
+}
+/* 微信鼠标放上后上拉框最下面小三角  */
+.collectDiv>.collectContent>ul>li>.conPic i{
+    display: inline-block;
+    position: absolute;
+    bottom: -16px;
+    left: 59px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    vertical-align: middle;
+    border: 6px dashed transparent;
+    border-top-style: solid;
+    border-top-color: #fff;
+    border-bottom-width: 0;
+}
+/* 微信鼠标放上后显示上拉框 */
+.collectDiv>.collectContent>ul>li>.conPic .weixin:hover>.conDrop{
+    display: block;
+}
+/* 综合模块 end */
+
+
+/* 底部备案 start */
+.lastDiv{
+    background: #292e33;
+    border-top: 1px solid #3F4348;
+    padding: 20px 0;
+    text-align: center;
+    color: #7a7d80;
+}
+.lastDiv p{
+    line-height: 24px;
+    font-size: 12px;
+}
+.lastDiv a{
+    display: inline-block;
+    text-decoration: none;
+    color: #7a7d80;
+    height: 20px;
+    line-height: 20px;
+}
+.lastDiv a>p{
+    float: left;
+    color: #939393;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+/* 底部备案 end */
+
+/* 侧边栏 start */
+.sidebarDiv{
+    position: fixed;
+    right: 2px;
+    bottom: 60px;
+    z-index: 21;
+}
+
+.sidebarDiv *{
+    box-sizing: border-box;
+}
+.sidebarDiv li{
+    width: 55px;
+    height: 55px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    padding-top: 34px;
+    text-align: center;
+    background: white;
+    color: #666;
+    position: relative;
+    font-size: 12px;
+}
+/* hover改文字颜色 */
+.sidebarDiv li:hover{
+    border: 1px solid #059FFF;
+    color: #059FFF;
+}
+/* 6个块的图片以及hover后的图片 */
+.sidebarDiv ul>:nth-child(1){
+    background-image: url('../img/HomePage/sideBar/icon_suspension_qq.png');
+    background-repeat: no-repeat;
+    background-position: center 8px;
+} 
+.sidebarDiv ul>:nth-child(1):hover{
+    background-image: url('../img/HomePage/sideBar/icon_suspension_qq_active.png');  
+} 
+.sidebarDiv li:nth-child(2){
+    background-image: url('../img/HomePage/sideBar/icon_suspension_wechat.png');
+    background-repeat: no-repeat;
+    background-position: center 8px;
+} 
+.sidebarDiv li:nth-child(2):hover{
+    background-image: url('../img/HomePage/sideBar/icon_suspension_wechat_active.png');
+} 
+.sidebarDiv li:nth-child(3){
+    background-image: url('../img/HomePage/sideBar/icon_suspension_tel.png');
+    background-repeat: no-repeat;
+    background-position: center 8px;
+} 
+.sidebarDiv li:nth-child(3):hover{
+    background-image: url('../img/HomePage/sideBar/icon_suspension_tel_active.png');
+}
+.sidebarDiv li:nth-child(4)::before{
+    content: "";
+    width: 26px;
+    height: 25px;
+    display: block;
+    margin: -29px auto 2px;
+    background: url('../img/HomePage/sideBar/side-menu.png-v=2.png') no-repeat -85PX 0;
+} 
+.sidebarDiv li:nth-child(4):hover:before{
+    background: url('../img/HomePage/sideBar/side-menu.png-v=2.png') no-repeat -85PX -28px;
+} 
+.sidebarDiv li:nth-child(5)::before{
+    content: "";
+    width: 26px;
+    height: 25px;
+    display: block;
+    margin: -29px auto 2px;
+    background: url('../img/HomePage/sideBar/side-menu.png-v=2.png') no-repeat -116px 0;
+} 
+.sidebarDiv li:nth-child(5):hover:before{
+    background: url('../img/HomePage/sideBar/side-menu.png-v=2.png') no-repeat -116px -28px;
+} 
+.sidebarDiv .last::before{
+    content: "";
+    width: 26px;
+    height: 25px;
+    display: block;
+    margin: -29px auto 2px;
+    background: url('../img/HomePage/sideBar/side-menu.png-v=2.png') no-repeat -206px 0;
+} 
+.sidebarDiv .last:hover:before{
+    background: url('../img/HomePage/sideBar/side-menu.png-v=2.png') no-repeat -206px -27px;
+} 
+.sidebarDiv ul>a{
+    text-decoration: none;
+    color: black;
+}
+.sidebarDiv ul>:last-child{
+    visibility: hidden;
+}
+/* qq图标放上后侧边div */
+.sidebarDiv li:nth-child(1):hover .qqDrop{
+    display: block;
+}
+.sidebarDiv li .qqDrop{
+    display: none;
+    width: 320px;
+    height: 95px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: absolute;
+    left: -331px;
+    bottom: -25px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: black;
+}
+/* 添加伪类，防止右滑框之间的间隙选不到 */
+.sidebarDiv li div[class*="Drop"]::after{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 95px;
+    position: absolute;
+    /* background-color: royalblue; */
+    top: 0;
+    right: -12px;
+}
+.sidebarDiv .qqDrop a{
+    display: block;
+    background: url('../img/HomePage/sideBar/icon_suspension_consult.png') left center no-repeat;
+    /* width: 100%; */
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    padding-left: 30px;
+    color: #999;
+}
+.sidebarDiv .qqDrop a:hover{
+    color: #059FFF;
+}
+/* qq放上后上拉框最下面小三角  */
+.sidebarDiv .qqDrop div{
+    width:0; 
+    height:0; 
+    border-top:6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+    position: absolute;
+    bottom: 40px;
+    left: 318px;
+    z-index: 99;
+}
+/* 微信鼠标放上后二维码 */
+.sidebarDiv li:nth-child(2):hover .wechatDrop{
+    display: block;
+}
+.sidebarDiv li .wechatDrop{
+    display: none;
+    width: 110px;
+    height: 110px;
+    background: url('../img/HomePage/5e5df2ab2f875.jpg') no-repeat ;
+    background-size: 100% 100%;
+    /* border: 10px solid white; */
+    position: absolute;
+    left: -123px;
+    bottom: -30px;
+}
+/* 微信鼠标放上后最下面小三角  */
+.sidebarDiv .wechatDrop div{
+    width:0; 
+    height:0; 
+    border-top:6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+    position: absolute;
+    bottom: 45px;
+    left: 110px;
+    z-index: 99;
+}
+/* 电话图标放上后侧边div */
+.sidebarDiv li:nth-child(3):hover .telDrop{
+    display: block;
+}
+.sidebarDiv li .telDrop{
+    display: none;
+    width: 220px;
+    height: 95px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    position: absolute;
+    left: -231px;
+    bottom: -25px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    color: black;
+}
+.sidebarDiv .telDrop a{
+    display: block;
+    background: url('../img/HomePage/sideBar/icon_suspension_tel_orange.png') left center no-repeat;
+    /* width: 100%; */
+    height: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    padding-left: 30px;
+    color: #999;
+}
+.sidebarDiv .telDrop a:hover{
+    color: #059FFF;
+}
+/* 电话放上后上拉框最下面小三角  */
+.sidebarDiv .telDrop div{
+    width:0; 
+    height:0; 
+    border-top:6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid white;
+    position: absolute;
+    bottom: 40px;
+    left: 218px;
+    z-index: 99;
+}
+/* 微信鼠标放上后显示上拉框 */
+/* 侧边栏 end */
